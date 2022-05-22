@@ -1,9 +1,17 @@
+import GlobalStyle from './globalStyles';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from "./pages/HomePage/Home";
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   	return (
-    	<div className="App">
-      
-    	</div>
+		<Router>
+			<GlobalStyle />
+			<Routes>
+				<Route path='/' element={<Home />} />
+			</Routes>
+		</Router>
   	);
 }
 
