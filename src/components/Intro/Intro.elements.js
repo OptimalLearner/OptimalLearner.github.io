@@ -2,24 +2,26 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     width: 100vw;
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: #232323;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 10vw;
-    font-family: 'Nova Slim', cursive;
+    padding-left: 12.5vw;
 
     @media screen and (max-width: 960px) {
-        min-height: 85vh;
+        min-height: 100vh;
         padding-left: 8vw;
     }
 `;
 
 export const Greetings = styled.p`
     color: #FFD93D;
-    font-size: 40px;
+    font-size: 2rem;
     margin: 0.8rem 0;
+    margin-top: -10vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 
     @media screen and (max-width: 960px) {
         font-size: 25px;
@@ -32,6 +34,7 @@ export const Name = styled.p`
     margin: 1rem 0;
     text-shadow: #FFF 1px 0 2px;
     font-weight: 500;
+    font-family: 'Bubblegum Sans', cursive;
 
     @media screen and (max-width: 960px) {
         font-size: 50px;
@@ -44,6 +47,8 @@ export const Message = styled.p`
     font-size: 25px;
     margin: 0.75rem 0;
     width: 45vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
 
     @media screen and (max-width: 960px) {
         font-size: 20px;
@@ -55,7 +60,7 @@ export const Message = styled.p`
 export const KnowMoreButton = styled.button`
     width: 20rem;
     font-size: 22px;
-    font-family: 'Nova Slim', cursive;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0.4rem 1rem;
     margin: 2rem 0;
     border-radius: 0.4rem;
@@ -75,9 +80,9 @@ export const Shape = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    width: 32.5vw;
-    height: 100vh;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 110%, 0% 50%);
+    width: 30vw;
+    height: 120vh;;
+    clip-path: polygon(45% 0%,100% 0%,100% 100%,0% 50%);
     background-color: #FFD93D;
 
     @media screen and (max-width: 960px) {

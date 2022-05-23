@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Navbar from '../../components/Navbar/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
@@ -15,6 +16,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
             <Intro />
+            <Footer />
         </div>
     )
 }
