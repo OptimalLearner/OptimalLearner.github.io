@@ -29,10 +29,10 @@ export const Greetings = styled.p`
 `;
 
 export const Name = styled.p`
-    color: #FFF;
+    color: #F2F2F2;
     font-size: 80px;
     margin: 1rem 0;
-    text-shadow: #FFF 1px 0 2px;
+    text-shadow: #F2F2F2 1px 0 2px;
     font-weight: 500;
     font-family: 'Bubblegum Sans', cursive;
 
@@ -43,7 +43,7 @@ export const Name = styled.p`
 `;
 
 export const Message = styled.p`
-    color: #FFF;
+    color: #F2F2F2;
     font-size: 25px;
     margin: 0.75rem 0;
     width: 45vw;
@@ -64,8 +64,8 @@ export const KnowMoreButton = styled.button`
     padding: 0.4rem 1rem;
     margin: 2rem 0;
     border-radius: 0.4rem;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #F2F2F2;
+    color: #F2F2F2;
     background-color: transparent;
     cursor: pointer;
 

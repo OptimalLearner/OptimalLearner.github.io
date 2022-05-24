@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import About from '../../components/About/About';
 import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Navbar from '../../components/Navbar/Navbar';
@@ -17,6 +18,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
             <Intro />
+            <About />
             <SocialMedia />
             <Footer />
         </div>
