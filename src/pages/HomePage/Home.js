@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import About from '../../components/About/About';
+import Education from '../../components/Education/Education';
 import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Navbar from '../../components/Navbar/Navbar';
@@ -20,6 +21,7 @@ const Home = () => {
 			<Navbar toggle={toggle} />
             <Intro />
             <About />
+            <Education />
             <Skills />
             <SocialMedia />
             <Footer />
