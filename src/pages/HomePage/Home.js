@@ -4,6 +4,7 @@ import Education from '../../components/Education/Education';
 import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import Navbar from '../../components/Navbar/Navbar';
+import ProjectList from '../../components/ProjectList/ProjectList';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Skills from '../../components/Skills/Skills';
 import SocialMedia from '../../components/SocialMedia/SocialMedia';
@@ -23,6 +24,7 @@ const Home = () => {
             <About />
             <Education />
             <Skills />
+            <ProjectList />
             <SocialMedia />
             <Footer />
         </div>
