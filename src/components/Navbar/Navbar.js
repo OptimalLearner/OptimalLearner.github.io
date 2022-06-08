@@ -14,22 +14,22 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='#'>Home</NavLinks>
+                            <NavLinks to='/' smooth={true} duration={500}>Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>About Me</NavLinks>
+                            <NavLinks to='about' smooth={true} duration={500} offset={-150}>About Me</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='education'>Education</NavLinks>
+                            <NavLinks to='education' smooth={true} duration={500} offset={-80}>Education</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='skills'>Skills</NavLinks>
+                            <NavLinks to='skills' smooth={true} duration={500} offset={-80}>Skills</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='projects'>Projects</NavLinks>
+                            <NavLinks to='projects' smooth={true} duration={1000} offset={-80}>Projects</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact'>Contact</NavLinks>
+                            <NavLinks to='contact' smooth={true} duration={1000} offset={-80}>Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

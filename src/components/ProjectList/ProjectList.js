@@ -7,7 +7,7 @@ import { BsGlobe2 } from 'react-icons/bs';
 
 const ProjectList = () => {
     return (
-        <div>
+        <div name='projects'>
             <ProjectListContainer>
                 <Heading data-shadow='Projects'> Projects </Heading>
                 { projectInfo.map((p) => (

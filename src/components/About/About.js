@@ -4,7 +4,7 @@ import VectorImg from '../../images/AboutVectorImg.svg';
 
 const About = () => {
     return (
-        <div>
+        <div name='about'>
             <AboutContainer>
                 <div style={{ position: 'relative' }}>
                     <Heading data-shadow='About Me'> About Me </Heading>

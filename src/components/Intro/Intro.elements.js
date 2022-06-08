@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 export const InfoContainer = styled.div`
     width: 100vw;
@@ -57,7 +58,7 @@ export const Message = styled.p`
     }
 `;
 
-export const KnowMoreButton = styled.button`
+export const KnowMoreButton = styled(LinkS)`
     width: 20rem;
     font-size: 22px;
     font-family: 'Ubuntu', sans-serif;
@@ -68,6 +69,7 @@ export const KnowMoreButton = styled.button`
     color: #F2F2F2;
     background-color: transparent;
     cursor: pointer;
+    text-align: center;
 
     &:hover {
         background-color: #FFD93D;

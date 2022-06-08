@@ -3,12 +3,12 @@ import { InfoContainer, Greetings, Name, Message, KnowMoreButton, Shape } from '
 
 const Intro = () => {
     return (
-        <div>
+        <div name='/'>
             <InfoContainer>
                 <Greetings> Hello, I'm </Greetings>
                 <Name> KEVAL DHANANI </Name>
                 <Message> Final Year Computer Engineering student learning to build full stack web3 applications using modern technologies. </Message>
-                <KnowMoreButton> Know more about me </KnowMoreButton>
+                <KnowMoreButton to='about' smooth={true} duration={500} offset={-150}> Know more about me </KnowMoreButton>
             </InfoContainer>
             <Shape></Shape>
         </div>

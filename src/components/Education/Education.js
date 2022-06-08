@@ -4,7 +4,7 @@ import { TimeLineContainer, Heading } from "./Education.elements";
 
 const Education = () => {
     return (
-        <div>
+        <div name='education'>
             <TimeLineContainer>
                 <Heading data-shadow='Education'> Education </Heading>
                 <VerticalTimeline>

@@ -4,7 +4,7 @@ import { skills } from './Data';
 
 const Skills = () => {
     return (
-        <div>
+        <div name='skills'>
             <SkillsContainer>
                 <Heading data-shadow='Skills'> Skills </Heading>
                 <SkillsType>

@@ -3,7 +3,7 @@ import { ContactContainer, Heading, ContactPartition, ContactPartitionLeft, Text
 
 const Contact = () => {
     return (
-        <div>
+        <div name='contact'>
             <ContactContainer>
                 <Heading data-shadow='Contact Me'> Contact Me </Heading>
                 <ContactPartition>
