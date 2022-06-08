@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <FooterContainer>
-                <FooterMessage> Designed and Built by <Bio href=''> Keval Dhanani. </Bio> </FooterMessage>
+                <FooterMessage> Designed and Built with <Heart> ❤ </Heart> by <Bio> Keval Dhanani </Bio> </FooterMessage>
             </FooterContainer>
         </div>
     )

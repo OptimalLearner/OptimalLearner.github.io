@@ -31,4 +31,6 @@ export const Bio = styled.a`
 export const Heart = styled.span`
     color: #FFD93D;
     padding-top: 55px;
+    font-size: 20px;
+    margin: 0 2.5px;
 `;
