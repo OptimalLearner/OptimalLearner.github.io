@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
 import Education from '../../components/Education/Education';
 import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
@@ -25,6 +26,7 @@ const Home = () => {
             <Education />
             <Skills />
             <ProjectList />
+            <Contact />
             <SocialMedia />
             <Footer />
         </div>
