@@ -12,6 +12,10 @@ export const SkillsContainer = styled.div`
         min-height: 100vh;
         padding-left: 8vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        padding: 1rem 0;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -44,7 +48,16 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 960px) {
         font-size: 50px;
-        margin-right: 5vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 70px;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 `;
 
@@ -53,6 +66,11 @@ export const SkillsType = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+
+    @media only screen and (max-width: 600px) {
+        width: 95vw;
+        margin: 1rem 2.5vw;
+    }
 `;
 
 export const SkillsTypeHeading = styled.h3`
@@ -63,11 +81,14 @@ export const SkillsTypeHeading = styled.h3`
 
 export const SkillsList = styled.div`
     width: 100%;
-    
     padding: 0.8rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    @media only screen and (max-width: 600px) {
+        justify-content: center;
+    }
 `;
 
 export const SkillsBox = styled.div`
@@ -84,6 +105,11 @@ export const SkillsBox = styled.div`
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 40vw;
+        margin: 0.8rem 2vw;
     }
 `;
 

@@ -11,6 +11,10 @@ export const TimeLineContainer = styled.div`
 
     @media screen and (max-width: 960px) {
     }
+
+    @media only screen and (max-width: 600px) {
+        padding: 1rem 0 4rem;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -44,6 +48,16 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 960px) {
         font-size: 50px;
-        margin-right: 5vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 2rem;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 `;

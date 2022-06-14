@@ -14,10 +14,21 @@ export const AboutContainer = styled.div`
         min-height: 100vh;
         padding-left: 8vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        min-height: 100vh;
+        padding: 1rem 0;
+        flex-direction: column;
+        margin-top: 0;
+    }
 `;
 
 export const AboutVectorContainer = styled.div`
     width: 40vw;
+    @media only screen and (max-width: 600px) {
+        width: 90vw;
+        margin: 0 5vw;
+    }
 `;
 
 export const AboutVector = styled.img`
@@ -25,6 +36,11 @@ export const AboutVector = styled.img`
     height: 80%;
     @media screen and (max-width: 960px) {
         font-size: 25px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        height: 100%;
     }
 `;
 
@@ -57,7 +73,17 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 960px) {
         font-size: 50px;
-        margin-right: 5vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 2rem;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 `;
 
@@ -74,5 +100,11 @@ export const AboutInfo = styled.p`
         font-size: 20px;
         margin-right: 5vw;
         width: 90%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin: 0 5% 1rem;
+        font-size: 19px;
     }
 `;

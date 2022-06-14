@@ -14,6 +14,10 @@ export const InfoContainer = styled.div`
         min-height: 100vh;
         padding-left: 8vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        height: 100vh;
+    }
 `;
 
 export const Greetings = styled.p`
@@ -26,6 +30,11 @@ export const Greetings = styled.p`
 
     @media screen and (max-width: 960px) {
         font-size: 25px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 5vh;
+        font-size: 2rem;
     }
 `;
 
@@ -41,6 +50,10 @@ export const Name = styled.p`
         font-size: 50px;
         margin-right: 5vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 60px;
+    }
 `;
 
 export const Message = styled.p`
@@ -55,6 +68,10 @@ export const Message = styled.p`
         font-size: 20px;
         margin-right: 5vw;
         width: 90%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 20px;
     }
 `;
 

@@ -21,6 +21,11 @@ export const FooterMessage = styled.p`
     @media screen and (max-width: 960px) {
         font-size: 17px;
     }
+    
+    @media only screen and (max-width: 600px) {
+        font-size: 18px;
+        margin: 0.8rem 0.6rem;
+    }
 `;
 
 export const Bio = styled.a`

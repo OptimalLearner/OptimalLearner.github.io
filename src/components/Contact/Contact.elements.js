@@ -12,6 +12,11 @@ export const ContactContainer = styled.div`
         min-height: 100vh;
         padding-left: 8vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        padding-left: 0;
+        padding: 1rem 0 3rem;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -45,7 +50,16 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 960px) {
         font-size: 50px;
-        margin-right: 5vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+        font-size: 70px;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 `;
 
@@ -57,6 +71,12 @@ export const ContactPartition = styled.div`
     align-items: flex-start;
     flex-direction: row;
     margin: 2rem 0 0 0;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5rem 0 0;
+    }
 `;
 
 export const ContactPartitionLeft = styled.div`
@@ -68,6 +88,14 @@ export const ContactPartitionLeft = styled.div`
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin: 1rem 5% 0;
+        min-height: 10rem;
+        padding: 0 1rem;
+        align-items: center;
+    }
 `;
 
 export const Text1 = styled.p`
@@ -75,6 +103,10 @@ export const Text1 = styled.p`
     color: #F2F2F2;
     margin-bottom: 2rem;
     text-align: justify;
+
+    @media only screen and (max-width: 600px) {
+        
+    }
 `;
 
 export const EmailButton = styled.a`
@@ -100,6 +132,12 @@ export const HR = styled.hr`
     height: 20rem;
     width: 2px;
     margin: 1rem 0 0 0;
+
+    @media only screen and (max-width: 600px) {
+        height: 2px;
+        width: 90%;
+        margin: 0.5rem 5% 1.5rem;
+    }
 `;
 
 export const ContactPartitionRight = styled.div`
@@ -111,12 +149,23 @@ export const ContactPartitionRight = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin: 1rem 5% 0;
+        min-height: 10rem;
+        padding: 0 1rem;
+    }
 `;
 
 export const Text2 = styled.p`
     font-size: 23px;
     color: #F2F2F2;
     margin-bottom: 1rem;
+    
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+    }
 `;
 
 export const ConnectButton = styled.a`

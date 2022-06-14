@@ -56,6 +56,7 @@ export const Heading = styled.h1`
     @media only screen and (max-width: 600px) {
         text-align: center;
         font-size: 70px;
+        margin-bottom: 3rem;
         &:after {
             left: 50%;
             transform: translateX(calc(-50% + 0.3rem));
