@@ -7,7 +7,6 @@ export const LoaderContainer = styled.div`
 
     @media screen and (max-width: 960px) {
         min-height: 100vh;
-        padding-left: 8vw;
     }
 `;
 
@@ -22,6 +21,8 @@ export const SVG = styled.svg`
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.5rem;
 
     use {
         fill: none;
@@ -52,18 +53,12 @@ export const SVG = styled.svg`
             animation-delay: -5s;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 10rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 10rem;
+    }
 `;
-
-// export const TextCopy = styled.use`
-//     fill: none;
-//     stroke: white;
-//     stroke-dasharray: 5% 30%;
-//     stroke-width: 6px;
-//     stroke-dashoffset: 0%;
-//     animation: ${stroke} 5.5s infinite linear;
-
-//     &:nth-child(1) {
-//         stroke: #F2F2F2;
-//         animation-delay: -1s;
-//     }
-// `;
