@@ -59,8 +59,42 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: #FFD93D;
         transition: 0.2s ease-in-out;
     }
 `;
 
+export const HR = styled.hr`
+    height: 20rem;
+    width: 2px;
+    margin: 2rem 0;
+    background-color: #F2F2F2;
+
+    @media only screen and (max-width: 600px) {
+        height: 2px;
+        width: 70%;
+        margin: 2rem 15% 3rem;
+    }
+`;
+
+export const SocialMediaList = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+`;
+
+export const SocialMediaIcon = styled.span`
+    color: #F2F2F2;
+    font-size: 2rem;
+    margin: 0 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        color: #FFD93D;
+        transform: scale(1.2);
+    }
+`;
