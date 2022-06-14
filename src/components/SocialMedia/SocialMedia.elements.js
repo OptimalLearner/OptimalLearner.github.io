@@ -19,6 +19,10 @@ export const SocialMediaList = styled.ul`
         width: 0.15rem;
         background-color: #F2F2F2;
     }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 `;
 
 export const SocialMediaIcon = styled.li`
