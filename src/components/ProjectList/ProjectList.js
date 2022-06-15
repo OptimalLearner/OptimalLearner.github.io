@@ -17,7 +17,7 @@ const ProjectList = () => {
                             <ProjectLinks>
                                 { p.github ?
                                     <div>
-                                        <a href={ p.github } target='_blank' data-tip data-for="github-tip">
+                                        <a href={ p.github } target='_blank' rel='noopener noreferrer' data-tip data-for="github-tip">
                                             <ProjectLinkGitHub githubLink={ p.github }>
                                                 <FaGithub />
                                             </ProjectLinkGitHub>
@@ -30,7 +30,7 @@ const ProjectList = () => {
                                 }
                                 { p.live ?
                                     <div>
-                                        <a href={ p.live } target='_blank' data-tip data-for="live-tip">
+                                        <a href={ p.live } target='_blank' rel='noopener noreferrer' data-tip data-for="live-tip">
                                             <ProjectLinkLive githubLink={ p.live }>
                                                 <BsGlobe2 />
                                             </ProjectLinkLive>
@@ -49,7 +49,7 @@ const ProjectList = () => {
                             <ProjectTech imgStart={ p.img_start }>
                             {
                                 p.tech_stack.map((elem) => (
-                                    <ProjectTechTag> { elem.name } </ProjectTechTag>
+                                    <ProjectTechTag key={ elem.name }> { elem.name } </ProjectTechTag>
                                 ))
                             }
                             </ProjectTech>

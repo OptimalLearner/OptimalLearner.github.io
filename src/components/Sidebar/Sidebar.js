@@ -18,10 +18,10 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='contact' smooth={true} duration={1000} offset={-80} onClick={ toggle }> Contact Me </SidebarLink>
                     <HR />
                     <SocialMediaList>
-                        <a href='https://www.linkedin.com/in/keval-dhanani-01/' target='_blank'> <SocialMediaIcon> <FaLinkedinIn /> </SocialMediaIcon> </a>
-                        <a href='https://github.com/OptimalLearner' target='_blank'> <SocialMediaIcon> <FaGithub /> </SocialMediaIcon> </a>
-                        <a href='https://codepen.io/OptimalLearner' target='_blank'> <SocialMediaIcon> <FaCodepen /> </SocialMediaIcon> </a>
-                        <a href='https://dev.to/optimallearner' target='_blank'> <SocialMediaIcon> <FaDev /> </SocialMediaIcon> </a>
+                        <a href='https://www.linkedin.com/in/keval-dhanani-01/' target='_blank' rel='noopener noreferrer'> <SocialMediaIcon> <FaLinkedinIn /> </SocialMediaIcon> </a>
+                        <a href='https://github.com/OptimalLearner' target='_blank' rel='noopener noreferrer'> <SocialMediaIcon> <FaGithub /> </SocialMediaIcon> </a>
+                        <a href='https://codepen.io/OptimalLearner' target='_blank' rel='noopener noreferrer'> <SocialMediaIcon> <FaCodepen /> </SocialMediaIcon> </a>
+                        <a href='https://dev.to/optimallearner' target='_blank' rel='noopener noreferrer'> <SocialMediaIcon> <FaDev /> </SocialMediaIcon> </a>
                     </SocialMediaList>
                 </SidebarMenu>
             </SidebarWrapper>

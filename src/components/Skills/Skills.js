@@ -10,7 +10,7 @@ const Skills = () => {
                 <SkillsType>
                     <SkillsList>
                         { skills.map((e) => (
-                            <SkillsBox>
+                            <SkillsBox key={ e.skills_name }>
                                 <SkillsLogo> {e.skills_logo} </SkillsLogo>
                                 <SkillsName> {e.skills_name} </SkillsName>
                             </SkillsBox>
