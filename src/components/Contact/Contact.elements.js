@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
     width: 100vw;
-    min-height: 70vh;
+    min-height: 50vh;
     background-color: #232323;
     display: flex;
     flex-direction: column;
     padding: 2rem 0 3rem 12.5vw;
 
-    @media screen and (max-width: 960px) {
-        min-height: 100vh;
-        padding-left: 8vw;
+    @media only screen and (max-width: 768px) {
+        min-height: 50vh;
+        padding: 1rem 2rem 3rem;
     }
 
     @media only screen and (max-width: 600px) {
@@ -48,8 +48,14 @@ export const Heading = styled.h1`
         -webkit-text-fill-color: transparent;
     }
 
-    @media screen and (max-width: 960px) {
-        font-size: 50px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 60px;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -71,6 +77,11 @@ export const ContactPartition = styled.div`
     align-items: flex-start;
     flex-direction: row;
     margin: 2rem 0 0 0;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+    }
 
     @media only screen and (max-width: 600px) {
         flex-direction: column;

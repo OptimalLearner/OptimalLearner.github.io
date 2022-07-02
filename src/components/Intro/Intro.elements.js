@@ -10,13 +10,14 @@ export const InfoContainer = styled.div`
     flex-direction: column;
     padding-left: 12.5vw;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
         min-height: 100vh;
-        padding-left: 8vw;
+        padding-left: 10vw;
     }
 
     @media only screen and (max-width: 600px) {
-        height: 100vh;
+        min-height: 100vh;
+        padding-left: 1.5rem;
     }
 `;
 
@@ -28,8 +29,8 @@ export const Greetings = styled.p`
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
 
-    @media screen and (max-width: 960px) {
-        font-size: 25px;
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
     }
 
     @media only screen and (max-width: 600px) {
@@ -46,9 +47,9 @@ export const Name = styled.p`
     font-weight: 500;
     font-family: 'Bubblegum Sans', cursive;
 
-    @media screen and (max-width: 960px) {
-        font-size: 50px;
-        margin-right: 5vw;
+    @media screen and (max-width: 768px) {
+        font-size: 80px;
+        margin-right: 10vw;
     }
 
     @media only screen and (max-width: 600px) {
@@ -64,8 +65,8 @@ export const Message = styled.p`
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 
-    @media screen and (max-width: 960px) {
-        font-size: 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
         margin-right: 5vw;
         width: 90%;
     }
@@ -93,6 +94,11 @@ export const KnowMoreButton = styled(LinkS)`
         border-color: #FFD93D;
         color: #232323;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+    }
+    
 `;
 
 export const Shape = styled.div`
@@ -104,7 +110,7 @@ export const Shape = styled.div`
     clip-path: polygon(45% 0%,100% 0%,100% 100%,0% 50%);
     background-color: #FFD93D;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 `;

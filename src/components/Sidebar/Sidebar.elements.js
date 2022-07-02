@@ -43,7 +43,7 @@ export const SidebarMenu = styled.ul`
     grid-template-rows: repeat(6, 80px);
     text-align: center;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         grid-template-rows: repeat(6, 60px);
     }
 `;
@@ -52,7 +52,6 @@ export const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
@@ -63,6 +62,14 @@ export const SidebarLink = styled(LinkS)`
         color: #FFD93D;
         transition: 0.2s ease-in-out;
     }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const HR = styled.hr`
@@ -71,7 +78,7 @@ export const HR = styled.hr`
     margin: 2rem 0;
     background-color: #F2F2F2;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
         height: 2px;
         width: 70%;
         margin: 2rem 15% 3rem;
@@ -98,4 +105,6 @@ export const SocialMediaIcon = styled.span`
         color: #FFD93D;
         transform: scale(1.2);
     }
+
+    
 `;

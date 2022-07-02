@@ -8,9 +8,10 @@ export const ProjectListContainer = styled.div`
     flex-direction: column;
     padding: 4rem 0 3rem 12.5vw;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
         min-height: 100vh;
-        padding-left: 8vw;
+        padding-left: 0;
+        padding: 2rem 0 1rem;
     }
 
     @media only screen and (max-width: 600px) {
@@ -48,9 +49,14 @@ export const Heading = styled.h1`
         -webkit-text-fill-color: transparent;
     }
 
-    @media screen and (max-width: 960px) {
-        font-size: 50px;
-        margin-right: 5vw;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 3rem;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -73,6 +79,13 @@ export const ProjectCard = styled.div`
     align-items: center;
     margin: 2.5rem 0;
 
+    @media only screen and (max-width: 768px) {
+        width: 96%;
+        margin: 0 2%;
+        height: auto;
+        flex-direction: column;
+    }
+
     @media only screen and (max-width: 600px) {
         width: 96%;
         margin: 0 2%;
@@ -87,6 +100,11 @@ export const ProjectBanner = styled.div`
     background: url(${(props)=>props.imgUrl}) no-repeat center center;
     background-size: 100% 100%;
     border-radius: 0.3rem;
+
+    @media only screen and (max-width: 768px) {
+        width: 95%;
+        height: 20rem;
+    }
 
     @media only screen and (max-width: 600px) {
         width: 95%;
@@ -146,8 +164,14 @@ export const ProjectInfo = styled.div`
     align-items: center;
     flex-direction: column;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
         width: 87.5%;
+        position: relative;
+        top: -5.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 85%;
         position: relative;
         top: -5.5rem;
     }
@@ -159,6 +183,10 @@ export const ProjectTitle = styled.h1`
     padding: 0 0.5rem;
     text-align: ${({imgStart}) => (imgStart ? 'right' : 'left')};
     color: #FFD93D;
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
 
     @media only screen and (max-width: 600px) {
         text-align: center;
@@ -178,6 +206,13 @@ export const ProjectDetails = styled.span`
     margin: 1.5rem 0;
     box-shadow: #111 0px 0px 10px, #000 0px 0px 6px;
 
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        left: 0;
+        padding: 1.5rem;
+        margin: 1rem 0 2rem;
+    }
+
     @media only screen and (max-width: 600px) {
         width: 100%;
         left: 0;
@@ -189,13 +224,20 @@ export const ProjectDetails = styled.span`
 export const ProjectTech = styled.div`
     display: flex;
     align-items: baseline;
-    justify-content: ${({imgStart}) => (imgStart ? 'flex-end' : 'flex-start')};
-    width: 100%;
+    justify-content: center;
+    width: 200%;
     text-align: right;
+
+    @media only screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
 
     @media only screen and (max-width: 600px) {
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
 `;
 
@@ -205,6 +247,10 @@ export const ProjectTechTag = styled.span`
     color: #232323;
     margin: 0 3px;
     border-radius: 0.2rem;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0 5px 10px;
+    }
 
     @media only screen and (max-width: 600px) {
         margin: 5px;

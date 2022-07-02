@@ -9,7 +9,8 @@ export const TimeLineContainer = styled.div`
     font-family: 'Ubuntu', sans-serif;
     padding: 1rem 0 5rem 12.5vw;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 768px) {
+        padding: 4rem 2rem;
     }
 
     @media only screen and (max-width: 600px) {
@@ -46,8 +47,17 @@ export const Heading = styled.h1`
         -webkit-text-fill-color: transparent;
     }
 
-    @media screen and (max-width: 960px) {
-        font-size: 50px;
+    @media screen and (max-width: 768px) {
+        font-size: 70px;
+
+        text-align: center;
+        font-size: 70px;
+        margin-bottom: 2rem;
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width: 600px) {

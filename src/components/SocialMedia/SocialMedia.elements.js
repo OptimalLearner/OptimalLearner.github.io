@@ -20,7 +20,7 @@ export const SocialMediaList = styled.ul`
         background-color: #F2F2F2;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
         display: none;
     }
 `;

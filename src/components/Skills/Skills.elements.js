@@ -8,9 +8,9 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
     padding-left: 12.5vw;
 
-    @media screen and (max-width: 960px) {
+    @media only screen and (max-width: 768px) {
         min-height: 100vh;
-        padding-left: 8vw;
+        padding: 1rem 0;
     }
 
     @media only screen and (max-width: 600px) {
@@ -46,8 +46,15 @@ export const Heading = styled.h1`
         -webkit-text-fill-color: transparent;
     }
 
-    @media screen and (max-width: 960px) {
-        font-size: 50px;
+    @media screen and (max-width: 768px) {
+        font-size: 60px;
+        text-align: center;
+
+        &:after {
+            left: 50%;
+            transform: translateX(calc(-50% + 0.3rem));
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -67,6 +74,10 @@ export const SkillsType = styled.div`
     flex-direction: column;
     margin-top: 2rem;
 
+    @media only screen and (max-width: 768px) {
+        width: 100vw;
+    }
+
     @media only screen and (max-width: 600px) {
         width: 95vw;
         margin: 1rem 2.5vw;
@@ -85,6 +96,10 @@ export const SkillsList = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
 
     @media only screen and (max-width: 600px) {
         justify-content: center;
@@ -106,6 +121,12 @@ export const SkillsBox = styled.div`
     &:hover {
         transform: scale(1.1);
     }
+
+    @media only screen and (max-width: 768px) {
+        width: 10rem;
+        margin: 0.8rem 1.5vw;
+    }
+    
 
     @media only screen and (max-width: 600px) {
         width: 40vw;
