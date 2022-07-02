@@ -1,14 +1,13 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Nav, NavbarContainer, NavLogo, LogoImg, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbar.elements';
-// import Logo from '../../images/portfolio_logo1.svg';
 
 const Navbar = ({ toggle }) => {
     return (
         <div>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'> {/*<LogoImg src={Logo} alt="React Logo" />*/} </NavLogo>
+                    <NavLogo to='/'> KD </NavLogo>
                     <MobileIcon onClick={ toggle }>
                         <FaBars />
                     </MobileIcon>

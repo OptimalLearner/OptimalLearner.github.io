@@ -33,12 +33,16 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
     display: flex;
-    justify-self: flex-start;
+    justify-self: center;
     align-items: center;
     text-decoration: none;
     color: #F2F2F2;
-    font-size: 2rem;
+    text-shadow: #F2F2F2 1px 0 2px;
+    font-family: 'Sedgwick Ave', cursive;;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-left: 24px;
+    margin-top: 0.75rem;
     cursor: pointer;
     text-decoration: none;
 `;
