@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23c55166.css",
-    "main.js": "/static/js/main.06f6e144.js",
+    "main.js": "/static/js/main.76f13ce7.js",
     "static/media/SmartSolverImg.png": "/static/media/SmartSolverImg.4531974846a316d16627.png",
     "static/media/WeatherPointImg.png": "/static/media/WeatherPointImg.cb5f6ed3d2e20765d8f7.png",
     "static/media/AboutVectorImg.svg": "/static/media/AboutVectorImg.202f81cb0c20428d7686c7bd0cbeb6ed.svg",
@@ -10,10 +10,10 @@
     "static/media/DocChainImg.png": "/static/media/DocChainImg.5e05fe15455923f0614a.png",
     "index.html": "/index.html",
     "main.23c55166.css.map": "/static/css/main.23c55166.css.map",
-    "main.06f6e144.js.map": "/static/js/main.06f6e144.js.map"
+    "main.76f13ce7.js.map": "/static/js/main.76f13ce7.js.map"
   },
   "entrypoints": [
     "static/css/main.23c55166.css",
-    "static/js/main.06f6e144.js"
+    "static/js/main.76f13ce7.js"
   ]
 }
