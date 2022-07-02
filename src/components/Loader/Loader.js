@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoaderContainer, SVG, TextCopy } from './Loader.elements';
+import { LoaderContainer, SVG } from './Loader.elements';
 
 const Loader = () => {
     return (

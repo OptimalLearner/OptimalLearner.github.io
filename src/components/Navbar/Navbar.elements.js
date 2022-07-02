@@ -47,11 +47,6 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
 `;
 
-export const LogoImg = styled.img`
-    width: 60px;
-    height: 60px;
-`;
-
 export const NavIcon = styled(FaMarkdown)`
     margin-right: 0.5rem;
 `;

@@ -1,6 +1,5 @@
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, LogoImg, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbar.elements';
+import { FaBars } from 'react-icons/fa';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbar.elements';
 
 const Navbar = ({ toggle }) => {
     return (
